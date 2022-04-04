@@ -9,21 +9,21 @@
 </head>
 <body>
     <!-- Header/Nav -->
-    <header>
-        <div class="header-name">
-            <img src="./assets/images/msu-logo.svg" alt="michigan state logo">
-            <h1>Chase Skorczewski</h1>    
+    <header class="flex-wrap">
+        <div class="header bg-primary">
+            <img src="./assets/images/msu-logo.svg" alt="michigan state logo" class="header-logo">
+            <h1 class="header-name">Chase Skorczewski</h1>    
         </div>
         <nav class="header-nav">
-            <ul>
+            <ul class="flex-wrap">
                 <li>
-                   <a href="#about">About Me</a>
+                   <a href="#about" class="nav-link">About Me</a>
                 </li>
                 <li>
-                    <a href="#projects">My Projects</a>
+                    <a href="#projects" class="nav-link">My Projects</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact Me</a>
+                    <a href="#contact" class="nav-link">Contact Me</a>
                 </li>
             </ul>
         </nav>
@@ -32,8 +32,8 @@
 
     <!-- About Me -->
 
-    <section id="about">
-        <h2>About Myself:</h2>
+    <section id="about" class="flex-wrap">
+        <h2 class="bg-secondary section-title">About Myself:</h2>
         <img src="./assets/images/chase-profile.jpg" alt="chase skorczewski">
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum porro reprehenderit repellat dignissimos amet accusantium et obcaecati. Accusantium iure, inventore maiores quos, recusandae dolor perspiciatis enim ea id animi consectetur?
@@ -45,55 +45,57 @@
 
     <!-- My Projects -->
 
-    <section id="projects">
-        <h2>My Projects:</h2>
-        <a href="https://cmskorcz.github.io/run-buddy/" class="project">
+    <section id="projects" class="flex-wrap bg-primary">
+        <h2 class="section-title">My Projects:</h2>
+        <a href="https://cmskorcz.github.io/run-buddy/" class="project flex-wrap" target="_blank">
             <img src="./assets/images/run-buddy.png" alt="run buddy">
             <figcaption class="project-text">
                 <h3>Run Buddy</h3>
                 <p>HTML/CSS</p>
             </figcaption>
         </a>
-        <figure class="project">
-            <img src="" alt="placeholder">
+        <a href="#" class="project flex-wrap">
+            <img src="./assets/images/placeholder.png" alt="placeholder">
             <figcaption class="project-text">
                 <h3>Placeholder</h3>
                 <p>Placeholder</p>
             </figcaption>
-        </figure>
-        <figure class="project">
-            <img src="" alt="placeholder">
+        </a>
+        <a href="#" class="project flex-wrap">
+            <img src="./assets/images/placeholder.png" alt="placeholder">
             <figcaption class="project-text">
                 <h3>Placeholder</h3>
                 <p>Placeholder</p>
             </figcaption>
-        </figure>
+        </a>
     </section>
 
     <!-- Contact Me/Footer -->
 
-    <footer id="contact">
-        <div>
-            <h2>Contact Info:</h2>
+    <footer id="contact" class="flex-wrap">
+        <div class="contact-container bg-primary">
+            <div class="contact-title">
+                <h2>Contact Info:</h2>
+            </div>
+            <ul class="flex-wrap contact-list">
+                <li>
+                    <img src="./assets/images/phone.svg" alt="phone" class="contact-icon">
+                    <span>: (989)-525-4457</span>
+                </li>
+                <li>
+                    <img src="./assets/images/envelope.svg" alt="email" class="contact-icon">
+                    <span>: <a href="mailto:chaseskorey@icloud.com">chaseskorey@icloud.com</a></span>
+                </li>
+                <li>
+                    <img src="./assets/images/github.svg" alt="github" class="contact-icon">
+                    <span>: </span><a href="github.com/cmskorcz">cmskorcz</a>
+                </li>
+                <li>
+                    <img src="./assets/images/linkedin.svg" alt="linkedin" class="contact-icon">
+                    <span>: </span><a href="linkedin.com/in/chase-skorczewski">Chase Skorczewski</a>
+                </li>
+            </ul>    
         </div>
-        <ul>
-            <li>
-                <img src="./assets/images/phone.svg" alt="phone">
-                <span>: (989)-525-4457</span>
-            </li>
-            <li>
-                <img src="./assets/images/envelope.svg" alt="email">
-                <span>: <a href="mailto:chaseskorey@icloud.com">chaseskorey@icloud.com</a></span>
-            </li>
-            <li>
-                <img src="./assets/images/github.svg" alt="github">
-                <span>: </span><a href="github.com/cmskorcz">cmskorcz</a>
-            </li>
-            <li>
-                <img src="./assets/images/linkedin.svg" alt="linkedin">
-                <span>: </span><a href="linkedin.com/in/chase-skorczewski">Chase Skorczewski</a>
-            </li>
-        </ul>
     </footer>
 
 
