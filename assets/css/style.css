@@ -68,6 +68,7 @@ header {
     color: var(--secondary-color);
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 #contact div {
