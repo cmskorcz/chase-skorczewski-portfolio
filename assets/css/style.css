@@ -61,7 +61,53 @@ header {
 
 /* Contact/Footer */
 
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+}
 
+#contact div {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+#contact div h2 {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#contact ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact ul li {
+    list-style: none;
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#contact ul li:last-child {
+    padding-bottom: 10px;
+}
+
+#contact ul li img {
+    vertical-align: text-top;
+}
+
+#contact ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
 
 /* Media Queries */
 
