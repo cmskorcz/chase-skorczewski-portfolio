@@ -110,6 +110,50 @@ header nav {
     margin-bottom: 10px;
 }
 
+/* Work */
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #5A5959;
+}
+
+#work h2 {
+    width: fit-content;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 5px 2px 5px;
+    border-bottom: 2px solid #5A5959;
+    margin-bottom: 10px;
+}
+
+#work div {
+    width: 80%;
+}
+
+#run-buddy {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    text-decoration: none;
+    border: 3px solid #92E7DC;
+}
+
+#run-buddy figcaption {
+    background-color: #92E7DC;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+
+#run-buddy figcaption h3, #run-buddy figcaption p {
+    color: #5A5959;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 425px) {
