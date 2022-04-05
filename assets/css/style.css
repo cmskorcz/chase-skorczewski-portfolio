@@ -228,6 +228,7 @@ header nav {
     .about-head h2 {
         text-align: end;
         width: 100%;
+        font-size: 24px;
         border-bottom: none;
     }
 
@@ -264,6 +265,16 @@ header nav {
     /* Hero/Jumbo */
 
     .hero h2 {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    /* About Me */
+
+    .about-head h2 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 20px;
     }
 }
