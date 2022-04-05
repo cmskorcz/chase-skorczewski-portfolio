@@ -206,11 +206,11 @@ header nav {
     }
 
     .hero h2 {
-        width: 35%;
+        width: fit-content;
         font-size: 24px;
         align-self: flex-end;
         margin: 0 30px 10px 0;
-
+        padding: 15px 10px;
     }
 
     /* About Me */
