@@ -141,6 +141,7 @@ header nav {
     height: 20vh;
     text-decoration: none;
     border: 3px solid #92E7DC;
+    margin-bottom: 15px;
 }
 
 #run-buddy figcaption {
@@ -151,6 +152,28 @@ header nav {
 
 
 #run-buddy figcaption h3, #run-buddy figcaption p {
+    color: #5A5959;
+}
+
+.placeholder {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../images/placeholder.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    text-decoration: none;
+    border: 3px solid #92E7DC;
+    margin-bottom: 15px;
+}
+
+.placeholder figcaption {
+    background-color: #92E7DC;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.placeholder figcaption h3, .placeholder figcaption p {
     color: #5A5959;
 }
 
