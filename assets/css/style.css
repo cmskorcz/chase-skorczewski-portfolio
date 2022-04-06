@@ -177,6 +177,50 @@ header nav {
     color: #5A5959;
 }
 
+/* Contact */
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #5A5959;
+    margin-bottom: 15px;
+}
+
+#contact h2 {
+    width: fit-content;
+    margin: 0 20% 10px 20%;
+    padding: 0 5px 2px 5px;
+    border-bottom: 2px solid #5A5959;
+}
+
+#contact ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #5A5959;
+    border-bottom: 2px solid #5A5959;
+}
+
+#phone, #email {
+    width: 100%;
+    text-align: center;
+}
+
+#phone span {
+    border-bottom: 2px solid #5A5959;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 425px) {
