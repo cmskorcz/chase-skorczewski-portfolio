@@ -188,6 +188,7 @@ header nav {
 }
 
 #contact h2 {
+    font-size: 24px;
     width: fit-content;
     margin: 0 20% 10px 20%;
     padding: 0 5px 2px 5px;
@@ -198,7 +199,7 @@ header nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -258,6 +259,17 @@ header nav {
     #work div {
         width: 70%;
     }
+
+    /* Contact */
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #contact ul #phone, #contact ul #email {
+        width: 50%;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (min-width: 525px) {
@@ -298,6 +310,16 @@ header nav {
 
     #work div {
         width: 60%;
+    }
+
+    /* Contact */
+
+    #contact h2 {
+        font-size: 34px;
+    }
+
+    #contact ul {
+        font-size: 18px;
     }
 }   
 
@@ -345,13 +367,14 @@ header nav {
     }
 
     /* About Me */
+
     #about {
         justify-content: space-between;
     }
 
     .about-head {
         justify-content: flex-end;
-        width: 30%;
+        width: 20%;
         padding: 0 10px;
         border-right: 3px solid #5A5959;
     }
@@ -370,7 +393,7 @@ header nav {
     }
 
     .about-text {
-        width: 60%;
+        width: 70%;
         align-self: center;
         justify-content: flex-start;
     }
@@ -388,7 +411,7 @@ header nav {
     #work h2 {
         font-size: 30px;
         text-align: end;
-        width: 30%;
+        width: 20%;
         margin: 10px 0;
         padding: 0 10px;
         border-bottom: none;
@@ -396,7 +419,7 @@ header nav {
     }
     
     #work div {
-        width: 70%;
+        width: 80%;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
@@ -411,6 +434,33 @@ header nav {
 
     .placeholder {
         width: 45%;
+    }
+
+    /* Contact */
+
+    #contact {
+        justify-content: space-between;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+        text-align: end;
+        width: 20%;
+        margin: 0 0 10px 0;
+        padding: 0 10px 30px 10px;
+        border-bottom: none;
+        border-right: 3px solid #5A5959;
+    }
+
+    #contact ul {
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #contact ul #phone, #contact ul #email {
+        width: fit-content;
+        margin-bottom: 10px;
     }
 }
 
@@ -464,5 +514,15 @@ header nav {
 
     .placeholder {
         height: 25vh;
+    }
+
+    /* Contact */
+
+    #contact h2 {
+        font-size: 36px;
+    }
+
+    #contact ul {
+        font-size: 22px;
     }
 }
