@@ -1,9 +1,22 @@
 :root {
+    /* Color */
+
     --primary-color: #5A5959;
     --secondary-color: #92E7DC;
+
+    /* Margin */
+
     --primary-margin: 15px;
     --secondary-margin: 10px;
-    --title-border-bottom: 2px solid var(--primary-color);
+
+    /* Padding */
+
+    --primary-padding: 10px;
+
+    /* Border */
+
+    --primary-border: 3px solid var(--primary-color);
+    --secondary-border: 3px solid var(--secondary-color);
 }
 
 * {
@@ -16,6 +29,10 @@ body {
     background-color: whitesmoke;
 }
 
+h1, h2, h3, p {
+    color: var(--primary-color);
+}
+
 /* Utilities */
 
 .flex-wrap {
@@ -24,7 +41,6 @@ body {
 }
 
 .main-format {
-    color: var(--primary-color);
     margin-bottom: var(--primary-margin);
 }
 
@@ -33,7 +49,7 @@ body {
     text-align: start;
     font-size: 24px;
     padding: 0 5px 2px 5px;
-    border-bottom: var(--title-border-bottom);
+    border-bottom: var(--primary-border);
     margin-bottom: var(--primary-margin);
 }
 
@@ -43,10 +59,9 @@ header {
     justify-content: center;
 }
 
-header h1 {
+h1 {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 10px;
+    padding: var(--primary-padding);
     width: 100%;
     text-align: center;
     font-size: 36px;
@@ -54,10 +69,10 @@ header h1 {
 
 /* Navbar */
 
-header nav {
+nav {
     width: 100%;
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: var(--primary-padding) 0;
 }
 
 .nav-list {
@@ -68,10 +83,10 @@ header nav {
 .nav-list li {
     display: inline-block;
     padding:0 3px 2px 3px;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: var(--secondary-border);
 }
 
-.nav-list li a {
+.nav-list a {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 16px;
@@ -85,7 +100,7 @@ header nav {
     background-size: cover;
     background-position: center;
     background-image: url("../images/hero.jpeg");
-    height: 25vh;
+    height: 15vh;
     margin-bottom: var(--primary-margin);
 }
 
@@ -93,11 +108,10 @@ header nav {
     width: 80%;
     font-size: 24px;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
     margin: var(--secondary-margin) 0;
-    padding: 15px 0 15px;
+    padding: var(--primary-padding) 0;
     text-align: center;
-    align-self: center;
+    align-self: flex-end;
 }
 
 /* About Me */
@@ -108,7 +122,7 @@ header nav {
 
 .about-head img {
     width: 70%;
-    border: 3px solid var(--secondary-color);
+    border: var(--secondary-border);
     margin-bottom: var(--secondary-margin);
 }
 
@@ -126,7 +140,7 @@ header nav {
 }
 
 #work div {
-    width: 80%;
+    width: 90%;
 }
 
 #run-buddy {
@@ -137,7 +151,7 @@ header nav {
     background-position: center;
     height: 20vh;
     text-decoration: none;
-    border: 3px solid var(--secondary-color);
+    border: var(--secondary-border);
     margin-bottom: var(--primary-margin);
 }
 
@@ -145,11 +159,6 @@ header nav {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 3px 5px;
-}
-
-
-#run-buddy figcaption h3, #run-buddy figcaption p {
-    color: var(--primary-color);
 }
 
 .placeholder {
@@ -160,7 +169,7 @@ header nav {
     background-position: center;
     height: 20vh;
     text-decoration: none;
-    border: 3px solid var(--secondary-color);
+    border: var(--secondary-border);
     margin-bottom: var(--primary-margin);
 }
 
@@ -170,10 +179,6 @@ header nav {
     padding: 3px 5px;
 }
 
-.placeholder figcaption h3, .placeholder figcaption p {
-    color: var(--primary-color);
-}
-
 /* Contact */
 
 #contact {
@@ -181,30 +186,28 @@ header nav {
 }
 
 #contact ul {
-    width: 100%;
-    justify-content: space-around;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     list-style: none;
 }
 
 #contact ul li {
+    width: 100%;
     margin-bottom: var(--secondary-margin);
 }
 
-#contact ul li a {
+#contact a {
     text-decoration: none;
     color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-}
-
-#phone, #email {
-    width: 100%;
-    text-align: center;
+    border-bottom: var(--primary-border);
 }
 
 #phone span {
-    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-bottom: var(--primary-border);
 }
-
 /* Media Queries */
 
 @media screen and (min-width: 425px) {
@@ -217,7 +220,7 @@ header nav {
 
     /* Header */
 
-    header h1 {
+    h1 {
         font-size: 40px;
     }
 
@@ -243,7 +246,7 @@ header nav {
 
     #contact ul #phone, #contact ul #email {
         width: 50%;
-        margin-bottom: 15px;
+        margin-bottom: var(--primary-margin);
     }
 }
 
@@ -257,7 +260,7 @@ header nav {
 
     /* Header */
 
-    header h1 {
+    h1 {
         font-size: 44px;
     }
 
@@ -298,9 +301,10 @@ header nav {
     /* Utilities */
 
     .section-title {
-
+        text-align: end;
+        font-size: 30px;
+        border-bottom: none;
     }
-
     /* Header */
 
     header {
@@ -309,7 +313,7 @@ header nav {
         align-items: center;
     }
     
-    header h1 {
+    h1 {
         width: 35%;
         font-size: 36px;
         text-align: end;
@@ -317,10 +321,10 @@ header nav {
 
     /* Navbar */
 
-    header nav {
+    nav {
         width: 45%;
         align-self: flex-end;
-        margin-bottom: 15px;
+        margin-bottom: var(--primary-margin);
         padding-bottom: 0;
     }
 
@@ -337,9 +341,8 @@ header nav {
     .hero h2 {
         width: fit-content;
         font-size: 30px;
-        align-self: flex-end;
-        margin: 0 30px 10px 0;
-        padding: 15px 10px;
+        margin: 0 30px var(--secondary-margin) 0;
+        padding: var(--primary-padding);
     }
 
     /* About Me */
@@ -351,21 +354,18 @@ header nav {
     .about-head {
         justify-content: flex-end;
         width: 20%;
-        padding: 0 10px;
-        border-right: 3px solid var(--primary-color);
+        padding: 0 var(--primary-padding);
+        border-right: var(--primary-border);
     }
 
     .about-head h2 {
-        text-align: end;
         width: 100%;
-        font-size: 30px;
         padding: 0;
-        border-bottom: none;
     }
 
     .about-head img {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: var(--secondary-margin);
     }
 
     .about-text {
@@ -385,13 +385,10 @@ header nav {
     }
 
     #work h2 {
-        font-size: 30px;
-        text-align: end;
         width: 20%;
-        margin: 10px 0;
-        padding: 0 10px;
-        border-bottom: none;
-        border-right: 3px solid var(--primary-color);
+        margin: var(--secondary-margin) 0;
+        padding: 0 var(--primary-padding);
+        border-right: var(--primary-border);
     }
     
     #work div {
@@ -399,7 +396,7 @@ header nav {
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin-top: var(--secondary-margin);
         justify-content: space-around;
     }
 
@@ -419,13 +416,10 @@ header nav {
     }
 
     #contact h2 {
-        font-size: 30px;
-        text-align: end;
         width: 20%;
-        margin: 0 0 10px 0;
-        padding: 0 10px 30px 10px;
-        border-bottom: none;
-        border-right: 3px solid var(--primary-color);
+        margin-bottom: var(--secondary-margin);
+        padding: 0 var(--primary-padding) 30px var(--primary-padding);
+        border-right: var(--primary-border);
     }
 
     #contact ul {
@@ -436,15 +430,21 @@ header nav {
 
     #contact ul #phone, #contact ul #email {
         width: fit-content;
-        margin-bottom: 10px;
+        margin-bottom: var(--secondary-margin);
     }
 }
 
 @media screen and (min-width: 980px) {
     
+    /* Utilities */
+
+    .section-title {
+        font-size: 36px;
+    }
+
     /* Header */
 
-    header h1 {
+    h1 {
         font-size: 40px;
     }
 
@@ -462,19 +462,11 @@ header nav {
 
     /* About Me */
 
-    .about-head h2 {
-        font-size: 36px;
-    }
-
     .about-text p {
         font-size: 22px;
     }
 
     /* Work */
-
-    #work h2 {
-        font-size: 36px;
-    }
 
     #run-buddy {
         height: 50vh;
@@ -493,10 +485,6 @@ header nav {
     }
 
     /* Contact */
-
-    #contact h2 {
-        font-size: 36px;
-    }
 
     #contact ul {
         font-size: 22px;
