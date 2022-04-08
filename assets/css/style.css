@@ -86,6 +86,15 @@ nav {
     border-bottom: var(--secondary-border);
 }
 
+.nav-list li:hover {
+    background-color: var(--secondary-color);
+    transition: 500ms;
+}
+
+.nav-list li:hover a {
+    color: var(--primary-color);
+}
+
 .nav-list a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -204,10 +213,6 @@ nav {
     border-bottom: var(--primary-border);
 }
 
-#phone span {
-    color: var(--primary-color);
-    border-bottom: var(--primary-border);
-}
 /* Media Queries */
 
 @media screen and (min-width: 425px) {
