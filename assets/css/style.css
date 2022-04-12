@@ -158,10 +158,15 @@ nav {
     background-image: url("../images/run-buddy.png");
     background-size: cover;
     background-position: center;
+    filter: brightness(0.75);
     height: 20vh;
     text-decoration: none;
     border: var(--secondary-border);
     margin-bottom: var(--primary-margin);
+}
+
+#run-buddy:hover {
+    filter: brightness(1);
 }
 
 #run-buddy figcaption {
@@ -176,10 +181,15 @@ nav {
     background-image: url("../images/placeholder.png");
     background-size: cover;
     background-position: center;
+    filter: brightness(0.75);
     height: 20vh;
     text-decoration: none;
     border: var(--secondary-border);
     margin-bottom: var(--primary-margin);
+}
+
+.placeholder:hover {
+    filter: brightness(1);
 }
 
 .placeholder figcaption {
