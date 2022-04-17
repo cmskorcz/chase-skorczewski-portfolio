@@ -165,14 +165,27 @@ nav {
     margin-bottom: var(--primary-margin);
 }
 
-#run-buddy:hover {
+#run-buddy:hover, #taskinator:hover {
     filter: brightness(1);
 }
 
-#run-buddy figcaption {
+#run-buddy figcaption, #taskinator figcaption {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 3px 5px;
+}
+
+#taskinator {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../images/taskinator.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.75);
+    height: 20vh;
+    text-decoration: none;
+    border: var(--secondary-border);
+    margin-bottom: var(--primary-margin);
 }
 
 .placeholder {
@@ -484,15 +497,15 @@ nav {
         height: 50vh;
     }
 
-    #run-buddy h3, .placeholder h3 {
+    #run-buddy h3, #taskinator, .placeholder h3 {
         font-size: 24px;
     }
 
-    #run-buddy p, .placeholder p {
+    #run-buddy p, #taskinator, .placeholder p {
         font-size: 18px;
     }
 
-    .placeholder {
+    #taskinator, .placeholder {
         height: 25vh;
     }
 
