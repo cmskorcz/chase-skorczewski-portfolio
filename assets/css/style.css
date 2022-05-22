@@ -165,11 +165,11 @@ nav {
     margin-bottom: var(--primary-margin);
 }
 
-#run-buddy:hover, #taskinator:hover {
+#run-buddy:hover, #taskinator:hover, #fur-ever-home:hover {
     filter: brightness(1);
 }
 
-#run-buddy figcaption, #taskinator figcaption {
+#run-buddy figcaption, #taskinator figcaption, #fur-ever-home figcaption {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 3px 5px;
@@ -179,6 +179,18 @@ nav {
     display: flex;
     align-items: flex-end;
     background-image: url("../images/taskinator.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.75);
+    height: 20vh;
+    text-decoration: none;
+    border: var(--secondary-border);
+    margin-bottom: var(--primary-margin);
+}
+#fur-ever-home {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../images/fur-ever-home.png");
     background-size: cover;
     background-position: center;
     filter: brightness(0.75);
@@ -497,15 +509,15 @@ nav {
         height: 50vh;
     }
 
-    #run-buddy h3, #taskinator, .placeholder h3 {
+    #run-buddy h3, #taskinator h3, #fur-ever-home h3, .placeholder h3 {
         font-size: 24px;
     }
 
-    #run-buddy p, #taskinator, .placeholder p {
+    #run-buddy p, #taskinator p, #fur-ever-home p, .placeholder p {
         font-size: 18px;
     }
 
-    #taskinator, .placeholder {
+    #taskinator, #fur-ever-home, .placeholder {
         height: 25vh;
     }
 
